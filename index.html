@@ -25,6 +25,14 @@
             </div>
           </a>
           <nav class="site-nav" aria-label="Selector de idioma">
+            <a class="nav-link-accent" href="#contacto">
+              <span class="lang lang-es">Tickets</span>
+              <span class="lang lang-en">Tickets</span>
+            </a>
+            <a class="nav-link-accent" href="#agenda">
+              <span class="lang lang-es">Programación</span>
+              <span class="lang lang-en">Program</span>
+            </a>
             <div class="lang-switch" role="group" aria-label="Selector de idioma">
               <button class="lang-switch__btn is-active" type="button" data-lang="es" aria-pressed="true">ES</button>
               <button class="lang-switch__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -74,27 +82,183 @@
 
       <section class="programacion" id="agenda">
         <div class="frame-style">
-          <div class="cintillo-title-cn">
+          <div class="cintillo-title-cn idx-programa__title-wrap">
             <p class="agenda">AGENDA</p>
             <h2 class="programacin"><span class="lang lang-es">Programación</span><span class="lang lang-en">Program</span></h2>
           </div>
-          <div class="backgroundborder">
-            <div class="background-2">
-              <div class="container-7"><p class="_5-2">5</p></div>
-              <div class="container-10"><div class="heading-5-2"><p class="artistas-invitados"><span class="lang lang-es">Artistas invitados</span><span class="lang lang-en">Featured artists</span></p></div></div>
-            </div>
-            <div class="background-3">
-              <div class="container-7"><p class="_4-2">4</p></div>
-              <div class="container-10"><div class="heading-5-2"><p class="charlas"><span class="lang lang-es">Charlas</span><span class="lang lang-en">Talks</span></p></div></div>
-            </div>
-            <div class="background-2">
-              <div class="container-7"><p class="_3-2">3</p></div>
-              <div class="container-10"><div class="heading-5-2"><p class="workshops">Workshops</p></div></div>
-            </div>
-            <div class="background-2">
-              <div class="container-7"><p class="_5-3">5</p></div>
-              <div class="container-10"><div class="heading-5-2"><p class="performance-en-vivo"><span class="lang lang-es">Performance en vivo</span><span class="lang lang-en">Live performance</span></p></div></div>
-            </div>
+          <div class="idx-programa__grid" role="list">
+            <article class="idx-programa__day idx-programa__day--left" role="listitem" aria-label="Agenda martes 8 de septiembre">
+              <h3 class="idx-programa__day-label">MARTES 08.09</h3>
+              <div class="idx-programa__rows">
+                <div class="idx-programa__row">
+                  <p class="idx-programa__time">19:00 - 22:00</p>
+                  <p class="idx-programa__event">
+                    <span class="lang lang-es">Workshop:<br>Syncro A/V para live performance</span>
+                    <span class="lang lang-en">Workshop:<br>Syncro A/V for live performance</span>
+                  </p>
+                  <p class="idx-programa__place">SALA OVAL</p>
+                </div>
+                <div class="idx-programa__row">
+                  <p class="idx-programa__time">19:00 - 22:00</p>
+                  <p class="idx-programa__event">
+                    <span class="lang lang-es">Workshop:<br>Desarrollo para instalaciones</span>
+                    <span class="lang lang-en">Workshop:<br>Development for installations</span>
+                  </p>
+                  <p class="idx-programa__place">ESPACIO BARRA</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="idx-programa__day idx-programa__day--right" role="listitem" aria-label="Agenda miércoles 9 de septiembre">
+              <h3 class="idx-programa__day-label">MIERCOLES 09.09</h3>
+              <div class="idx-programa__subheads" aria-hidden="true">
+                <p>SALA OVAL</p>
+                <p>ESPACIO BARRA</p>
+              </div>
+              <div class="idx-programa__columns">
+                <div class="idx-programa__rows idx-programa__rows--oval">
+                  <div class="idx-programa__row"><p class="idx-programa__time">14:00</p><p class="idx-programa__event"><span class="lang lang-es">Workshop:<br>Danza interactiva audiovisual</span><span class="lang lang-en">Workshop:<br>Interactive audiovisual dance</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">18:00</p><p class="idx-programa__event"><span class="lang lang-es">0dia — Lolo / Dani</span><span class="lang lang-en">0dia — Lolo / Dani</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">19:00</p><p class="idx-programa__event"><span class="lang lang-es">Mateo Amaral</span><span class="lang lang-en">Mateo Amaral</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">20:00</p><p class="idx-programa__event"><span class="lang lang-es">Manuel Palenque</span><span class="lang lang-en">Manuel Palenque</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">21:00</p><p class="idx-programa__event"><span class="lang lang-es">Heidi Giel</span><span class="lang lang-en">Heidi Giel</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">22:00</p><p class="idx-programa__event"><span class="lang lang-es">Agustín Colli</span><span class="lang lang-en">Agustín Colli</span></p></div>
+                </div>
+
+                <div class="idx-programa__rows idx-programa__rows--barra">
+                  <div class="idx-programa__row"><p class="idx-programa__time">17:30</p><p class="idx-programa__event"><span class="lang lang-es">Primera charla</span><span class="lang lang-en">First talk</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">18:30</p><p class="idx-programa__event"><span class="lang lang-es">Segunda charla</span><span class="lang lang-en">Second talk</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">19:30</p><p class="idx-programa__event"><span class="lang lang-es">Tercera charla</span><span class="lang lang-en">Third talk</span></p></div>
+                  <div class="idx-programa__row"><p class="idx-programa__time">20:30</p><p class="idx-programa__event"><span class="lang lang-es">Cuarta charla</span><span class="lang lang-en">Fourth talk</span></p></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="conetent-nobkg idx-lineup" id="lineup">
+        <div class="container-6 idx-lineup__surface">
+          <div class="cintillo-title-cn idx-lineup__heading">
+            <p class="la-experiencia-caja-negra idx-lineup__eyebrow">
+              <span class="lang lang-es">Curaduría · <span class="text-span-5">Artistas</span></span>
+              <span class="lang lang-en">Curation · <span class="text-span-5">Artists</span></span>
+            </p>
+            <h2 class="h2-seccion idx-lineup__title">Line-up</h2>
+          </div>
+
+          <div class="idx-lineup__grid" role="list">
+            <article class="idx-lineup__card idx-lineup__card--heidi" role="listitem" aria-label="Heidi Giel">
+              <div class="idx-lineup__overlay">
+                <h3 class="idx-lineup__name">Heidi Giel</h3>
+                <p class="idx-lineup__role">Electroacústica</p>
+              </div>
+            </article>
+
+            <article class="idx-lineup__card idx-lineup__card--mateo" role="listitem" aria-label="Mateo Amaral">
+              <div class="idx-lineup__overlay">
+                <h3 class="idx-lineup__name">Mateo Amaral</h3>
+                <p class="idx-lineup__role">AV · IA generativa</p>
+              </div>
+            </article>
+
+            <article class="idx-lineup__card idx-lineup__card--manuel" role="listitem" aria-label="Manuel Palenque">
+              <div class="idx-lineup__overlay">
+                <h3 class="idx-lineup__name">Manuel Palenque</h3>
+                <p class="idx-lineup__role">LIVE AV</p>
+              </div>
+            </article>
+
+            <article class="idx-lineup__card idx-lineup__card--odia" role="listitem" aria-label="Odia — Lolo / Dani">
+              <div class="idx-lineup__overlay">
+                <h3 class="idx-lineup__name">Odia — Lolo / Dani</h3>
+                <p class="idx-lineup__role">Código creativo</p>
+              </div>
+            </article>
+
+            <article class="idx-lineup__card idx-lineup__card--agustin" role="listitem" aria-label="Agustín Colli">
+              <div class="idx-lineup__overlay">
+                <h3 class="idx-lineup__name">Agustín Colli</h3>
+                <p class="idx-lineup__role">VJ · Pixel led</p>
+              </div>
+            </article>
+
+            <article class="idx-lineup__card idx-lineup__card--empty" role="presentation" aria-hidden="true"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="conetent-nobkg idx-nucleo" id="nucleo-tecnico">
+        <div class="container-6 idx-nucleo__surface">
+          <div class="cintillo-title-cn idx-nucleo__heading">
+            <p class="la-experiencia-caja-negra idx-nucleo__eyebrow">
+              <span class="lang lang-es">Formación <span class="text-span-5">práctica</span></span>
+              <span class="lang lang-en">Practical <span class="text-span-5">training</span></span>
+            </p>
+            <h2 class="h2-seccion idx-nucleo__title">
+              <span class="lang lang-es">Núcleo técnico</span>
+              <span class="lang lang-en">Technical core</span>
+            </h2>
+            <p class="p-seccion-cn idx-nucleo__lede">
+              <span class="lang lang-es">Tres Workshops hands-on para entrar en la escena</span>
+              <span class="lang lang-en">Three hands-on workshops to enter the scene</span>
+            </p>
+          </div>
+
+          <div class="idx-nucleo__grid" role="list">
+            <article class="idx-nucleo__card" role="listitem" aria-label="Workshop 1">
+              <div class="idx-nucleo__media idx-nucleo__media--01" aria-hidden="true"></div>
+              <div class="idx-nucleo__body">
+                <div class="idx-nucleo__meta">
+                  <p class="idx-nucleo__index">01</p>
+                  <p class="idx-nucleo__date">08.09 - 19h</p>
+                </div>
+                <h3 class="idx-nucleo__name">Syncro A/V para live performance</h3>
+                <p class="idx-nucleo__desc">Video + Iluminación + Sonido + Control en vivo</p>
+                <p class="idx-nucleo__speaker">Manuel Palenque</p>
+              </div>
+              <a class="idx-nucleo__cta" href="#">
+                <span class="lang lang-es">Más info</span>
+                <span class="lang lang-en">More info</span>
+                <span aria-hidden="true"> →</span>
+              </a>
+            </article>
+
+            <article class="idx-nucleo__card" role="listitem" aria-label="Workshop 2">
+              <div class="idx-nucleo__media idx-nucleo__media--02" aria-hidden="true"></div>
+              <div class="idx-nucleo__body">
+                <div class="idx-nucleo__meta">
+                  <p class="idx-nucleo__index">02</p>
+                  <p class="idx-nucleo__date">08.09 - 19h</p>
+                </div>
+                <h3 class="idx-nucleo__name">Desarrollo de instalaciones interactivas</h3>
+                <p class="idx-nucleo__desc">Interfaces de control + Sistemas interactivos + Casos reales</p>
+                <p class="idx-nucleo__speaker">Pablo González</p>
+              </div>
+              <a class="idx-nucleo__cta" href="#">
+                <span class="lang lang-es">Más info</span>
+                <span class="lang lang-en">More info</span>
+                <span aria-hidden="true"> →</span>
+              </a>
+            </article>
+
+            <article class="idx-nucleo__card" role="listitem" aria-label="Workshop 3">
+              <div class="idx-nucleo__media idx-nucleo__media--03" aria-hidden="true"></div>
+              <div class="idx-nucleo__body">
+                <div class="idx-nucleo__meta">
+                  <p class="idx-nucleo__index">03</p>
+                  <p class="idx-nucleo__date">09.09 - 14h</p>
+                </div>
+                <h3 class="idx-nucleo__name">Danza Interactiva Audiovisual</h3>
+                <p class="idx-nucleo__desc">Cuerpo + Movimiento + Sonido + Visuales</p>
+                <p class="idx-nucleo__speaker">Martina y Milo</p>
+              </div>
+              <a class="idx-nucleo__cta" href="#">
+                <span class="lang lang-es">Más info</span>
+                <span class="lang lang-en">More info</span>
+                <span aria-hidden="true"> →</span>
+              </a>
+            </article>
           </div>
         </div>
       </section>
@@ -179,7 +343,7 @@
           <h2 class="consegu-tu-ticket"><span class="lang lang-es">Conseguí tu ticket</span><span class="lang lang-en">Get your ticket</span></h2>
         </div>
         <div class="container-9">
-          <p class="el-evento-tiene-cupo-limitado-en-breve-anunciamos-el-lanzamiento"><span class="lang lang-es">El evento tiene cupo limitado.<br>En breve anunciamos el lanzamiento</span><span class="lang lang-en">The event has limited capacity.<br>We will announce the launch soon.</span></p>
+          <p class="el-evento-tiene-cupo-limitado-en-breve-anunciamos-el-lanzamiento"><span class="lang lang-es">El evento tiene cupo limitado.</span><span class="lang lang-en">The event has limited capacity.<br>We will announce the launch soon.</span></p>
         </div>
         <div class="container-15">
           <a class="button-style-3" href="https://tickets.brandlight.agency/eventos/dataraiz-ciclo-negro">
