@@ -4066,7 +4066,7 @@ p {
   border-right: 1.32656px solid #1f1f1d;
   border-bottom: 1.32656px solid #1f1f1d;
   background-color: #0e0e0e;
-  background-size: calc(100% + 2px) calc(100% + 2px);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
