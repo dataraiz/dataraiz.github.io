@@ -250,6 +250,19 @@
   z-index: 1;
 }
 
+.mu-lineup__overlay--melon-ale {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  min-height: 120px;
+  right: 0;
+  padding: 29px;
+}
+
 .mu-lineup__overlay--solo {
   bottom: 39px;
 }
@@ -290,8 +303,8 @@
   background-image: url("../assets/images/lineup-odia-lolo-dani.png");
 }
 
-.mu-lineup__card--agustin {
-  background-image: url("../assets/images/lineup-agustin-colli.png");
+.mu-lineup__card--melon-ale {
+  background-image: url("../assets/images/lineup-melon-manga-ale-ine.png");
 }
 
 .mu-lineup__card--empty {

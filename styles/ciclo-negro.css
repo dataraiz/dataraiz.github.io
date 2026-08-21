@@ -4088,6 +4088,19 @@ p {
   bottom: 29px;
 }
 
+.idx-lineup__overlay--melon-ale {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  min-height: 120px;
+  right: 0;
+  padding: 29px;
+}
+
 .idx-lineup__name {
   margin: 0;
   color: var(--_html-to-design---color--grey--91);
@@ -4124,12 +4137,101 @@ p {
   background-image: url("../assets/images/lineup-odia-lolo-dani.png");
 }
 
-.idx-lineup__card--agustin {
-  background-image: url("../assets/images/lineup-agustin-colli.png");
+.idx-lineup__card--melon-ale {
+  background-image: url("../assets/images/lineup-melon-manga-ale-ine.png");
 }
 
 .idx-lineup__card--empty {
   background-image: none;
+}
+
+.idx-expo {
+  background-color: #070707;
+  padding: 150px 230px;
+}
+
+.idx-expo__surface {
+  grid-row-gap: 72px;
+  max-width: 1460px;
+}
+
+.idx-expo__heading {
+  width: 100%;
+  max-width: 955.125px;
+}
+
+.idx-expo__title {
+  margin-top: 17px;
+}
+
+.idx-expo__grid {
+  border: 1.32656px solid #1f1f1d;
+  background: #0e0e0e;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.idx-expo__card {
+  min-height: 581.87px;
+  border-right: 1.32656px solid #1f1f1d;
+  border-bottom: 1.32656px solid #1f1f1d;
+  background-color: #0e0e0e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.idx-expo__card:nth-child(3n) {
+  border-right: 0;
+}
+
+.idx-expo__card:nth-last-child(-n+3) {
+  border-bottom: 0;
+}
+
+.idx-expo__overlay {
+  position: absolute;
+  left: 29px;
+  right: 29px;
+  bottom: 29px;
+}
+
+.idx-expo__name {
+  margin: 0;
+  color: var(--_html-to-design---color--grey--91);
+  font-family: var(--_html-to-design---font-family--font-1);
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.idx-expo__card--tamaaina .idx-expo__name {
+  font-size: 25px;
+  line-height: 1.18;
+}
+
+.idx-expo__card--tomas {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 18%, rgba(0, 0, 0, 0) 62%), url("../assets/images/raw/expo-raw-2855-363-a.jpeg");
+}
+
+.idx-expo__card--joaquina {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 18%, rgba(0, 0, 0, 0) 62%), url("../assets/images/raw/expo-raw-2855-370-a.png");
+}
+
+.idx-expo__card--pablo {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 18%, rgba(0, 0, 0, 0) 62%), url("../assets/images/raw/expo-raw-2855-379-a.png");
+}
+
+.idx-expo__card--tamaaina {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 18%, rgba(0, 0, 0, 0) 62%), url("../assets/images/raw/expo-raw-2855-386-a.jpeg");
+}
+
+.idx-expo__card--empty {
+  background: #0a0a0a;
 }
 
 .idx-nucleo {
@@ -5182,6 +5284,50 @@ p {
 
   .idx-nucleo {
     padding-right: 20px;
+  }
+
+  .idx-expo {
+    padding-right: 20px;
+  }
+
+  .idx-expo__surface {
+    grid-row-gap: 34px;
+  }
+
+  .idx-expo__title {
+    margin-top: 10px;
+  }
+
+  .idx-expo__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .idx-expo__card {
+    min-height: 360px;
+    border-right: 0;
+  }
+
+  .idx-expo__card:nth-last-child(-n+3) {
+    border-bottom: 1.32656px solid #1f1f1d;
+  }
+
+  .idx-expo__card:last-child {
+    border-bottom: 0;
+  }
+
+  .idx-expo__overlay {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .idx-expo__name {
+    font-size: 26px;
+  }
+
+  .idx-expo__card--tamaaina .idx-expo__name {
+    font-size: 21px;
+    line-height: 1.2;
   }
 
   .idx-nucleo__surface {
