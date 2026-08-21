@@ -5330,6 +5330,10 @@ p {
     line-height: 1.2;
   }
 
+  .idx-expo__card--empty {
+    display: none;
+  }
+
   .idx-nucleo__surface {
     grid-row-gap: 34px;
   }
