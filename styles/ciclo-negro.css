@@ -4005,14 +4005,14 @@ p {
   text-transform: uppercase;
 }
 
-.idx-programa__subheads {
-  border-bottom: 1px solid #50504d;
-  grid-template-columns: 514px 1fr;
-  min-height: 48px;
-  display: grid;
+.idx-programa__venue {
+  min-width: 0;
 }
 
-.idx-programa__subheads p {
+.idx-programa__venue-title {
+  border-bottom: 1px solid #50504d;
+  box-sizing: border-box;
+  min-height: 48px;
   margin: 0;
   color: var(--_html-to-design---color--grey--91);
   font-family: var(--_html-to-design---font-family--font-1);
@@ -4037,6 +4037,19 @@ p {
 
 .idx-programa__rows--barra .idx-programa__row:nth-child(n+5) {
   display: none;
+}
+
+@media screen and (max-width: 1700px) {
+  .idx-programa__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .idx-programa__columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 .idx-lineup {
@@ -4068,7 +4081,7 @@ p {
 }
 
 .idx-lineup__card {
-  min-height: 581.87px;
+  aspect-ratio: 486 / 582;
   border-right: 1.32656px solid #1f1f1d;
   border-bottom: 1.32656px solid #1f1f1d;
   background-color: #0e0e0e;
@@ -4180,7 +4193,7 @@ p {
 }
 
 .idx-expo__card {
-  min-height: 581.87px;
+  aspect-ratio: 486 / 582;
   border-right: 1.32656px solid #1f1f1d;
   border-bottom: 1.32656px solid #1f1f1d;
   background-color: #0e0e0e;
@@ -4320,18 +4333,18 @@ p {
   margin: 20px 0 0;
   color: var(--_html-to-design---color--grey--91);
   font-family: "Livvic", sans-serif;
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 41px;
+  line-height: 30px;
 }
 
 .idx-interfaz__speaker {
   margin: 9px 0 0;
   color: var(--_html-to-design---color--spring-green--61);
   font-family: "Livvic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .idx-interfaz__desc {
@@ -4341,6 +4354,40 @@ p {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .idx-interfaz__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .idx-interfaz__card:nth-child(4n) {
+    border-right: 1.32656px solid #1f1f1d;
+  }
+
+  .idx-interfaz__card:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .idx-interfaz__card:nth-child(-n+2) {
+    border-bottom: 1.32656px solid #1f1f1d;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .idx-interfaz__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .idx-interfaz__card {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1.32656px solid #1f1f1d;
+  }
+
+  .idx-interfaz__card:last-child {
+    border-bottom: 0;
+  }
 }
 
 .idx-nucleo {
@@ -5251,7 +5298,7 @@ p {
     font-size: var(--h2);
   }
 
-  .idx-programa__day-label, .idx-programa__time, .idx-programa__event, .idx-programa__subheads p {
+  .idx-programa__day-label, .idx-programa__time, .idx-programa__event, .idx-programa__venue-title {
     font-size: 20px;
     line-height: 24px;
   }
@@ -5259,11 +5306,6 @@ p {
   .idx-programa__grid {
     grid-template-columns: 1fr;
     gap: 34px;
-  }
-
-  .idx-programa__subheads {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
   }
 
   .idx-programa__columns {
@@ -5309,15 +5351,7 @@ p {
     padding-right: 20px;
   }
 
-  .idx-programa__subheads {
-    grid-template-columns: 1fr;
-    border-bottom: 0;
-    min-height: auto;
-    gap: 0;
-  }
-
-  .idx-programa__subheads p {
-    border-bottom: 1px solid #50504d;
+  .idx-programa__venue-title {
     font-size: 21px;
     line-height: 1.4;
     padding: 12px 0;
@@ -5366,20 +5400,11 @@ p {
   }
 
   .idx-lineup__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .idx-lineup__card {
-    min-height: 360px;
-    border-right: 0;
-  }
-
-  .idx-lineup__card:nth-last-child(-n+3) {
-    border-bottom: 1.32656px solid #1f1f1d;
-  }
-
-  .idx-lineup__card:last-child {
-    border-bottom: 0;
+    aspect-ratio: 486 / 582;
   }
 
   .idx-lineup__name {
@@ -5408,20 +5433,11 @@ p {
   }
 
   .idx-expo__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .idx-expo__card {
-    min-height: 360px;
-    border-right: 0;
-  }
-
-  .idx-expo__card:nth-last-child(-n+3) {
-    border-bottom: 1.32656px solid #1f1f1d;
-  }
-
-  .idx-expo__card:last-child {
-    border-bottom: 0;
+    aspect-ratio: 486 / 582;
   }
 
   .idx-expo__overlay {
