@@ -4756,6 +4756,21 @@ p {
   display: flex;
 }
 
+.logo-amigos-wrap {
+  min-height: 276px;
+}
+
+.logo-amigos {
+  width: auto;
+  max-width: 220px;
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) invert(1);
+  background: transparent;
+}
+
 .para-quien {
   grid-row-gap: 10px;
   background-image: url("../assets/images/comunidad-bg.jpg");
