@@ -5415,11 +5415,27 @@ p {
   }
 
   .idx-lineup__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .idx-lineup__card {
     aspect-ratio: 486 / 582;
+  }
+
+  .idx-lineup__card:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .idx-lineup__card:nth-last-child(-n+3) {
+    border-bottom: 1.32656px solid #1f1f1d;
+  }
+
+  .idx-lineup__card:last-child {
+    border-bottom: 0;
+  }
+
+  .idx-lineup__card--empty {
+    display: none;
   }
 
   .idx-lineup__name {
@@ -5448,11 +5464,23 @@ p {
   }
 
   .idx-expo__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .idx-expo__card {
     aspect-ratio: 486 / 582;
+  }
+
+  .idx-expo__card:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .idx-expo__card:nth-last-child(-n+3) {
+    border-bottom: 1.32656px solid #1f1f1d;
+  }
+
+  .idx-expo__card:last-child {
+    border-bottom: 0;
   }
 
   .idx-expo__overlay {
