@@ -5107,9 +5107,7 @@ p {
   .para-quien {
     padding-left: 20px;
   }
-}
 
-@media screen and (max-width: 479px) {
   h2 {
     font-size: var(--h2-mobile);
   }
@@ -5438,15 +5436,6 @@ p {
     display: none;
   }
 
-  .idx-lineup__name {
-    font-size: 26px;
-  }
-
-  .idx-lineup__role {
-    font-size: 14px;
-    letter-spacing: .8px;
-  }
-
   .idx-nucleo {
     padding-right: 20px;
   }
@@ -5487,15 +5476,6 @@ p {
     left: 20px;
     right: 20px;
     bottom: 20px;
-  }
-
-  .idx-expo__name {
-    font-size: 26px;
-  }
-
-  .idx-expo__card--tamaaina .idx-expo__name {
-    font-size: 21px;
-    line-height: 1.2;
   }
 
   .idx-expo__card--empty {
